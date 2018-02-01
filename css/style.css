@@ -1,0 +1,502 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+/*Boxmodel die zich toepast op alle elementen*/
+* {
+    box-sizing: border-box;
+} 
+
+/*Body*/
+body {
+    background-color: #E8E8E8;
+    font-family: 'ns_sans', 'Open Sans', sans-serif;
+    line-height: 1.6em;
+    color: #003082;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+/*Navigatie*/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  background-color:#FFF;
+  height:3.25em;
+  width:100%;
+  z-index:1000;
+}
+
+/*NS logo*/
+nav a:first-child {
+  margin:.1em 0 0 .5em;
+  position:absolute;
+  top: 1em;
+  left: .5em;
+  cursor: pointer;
+}
+
+/*Registreren*/
+nav a:nth-child(2){
+  position: absolute;
+  right: 3.5em;
+  top: -.09em;
+  cursor: pointer;
+}
+
+/*Bookmark*/
+nav a:nth-child(3){
+  margin:.1em 0 0 .5em;
+  position:absolute;
+  right:.7em;
+  top:.3em;
+  width:2.4rem;
+  cursor: pointer;
+}
+
+/*Account-Inloggen*/
+nav a:last-child {
+  margin:.1em 0 0 .5em;
+  color: #003082;
+  position:absolute;
+  right:7em;
+  top:.9em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*Iconen in navigatie*/
+nav img {
+  width: 3em;
+}
+
+/*Beweging account form*/
+input {
+ transition:all .2s;
+}
+
+/*Focus account form*/
+input:focus {
+ border: 2px solid #003082;
+  transform: scale(1.1, 1.1);
+}
+
+/*Beweging bookmark icon*/
+.bookmark {
+    transition:all .2s;
+}
+
+/*Hover bookmark icon*/
+.bookmark:hover {
+    transform: scale(1.1,1.1);
+}
+
+/*Filter*/
+form {
+    border: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    background-color: #ffc917;
+}
+
+/*Elementen in filter*/
+form a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+/*Iconen in filter*/
+form img {
+    width: 0.8rem;
+    height: auto;
+    margin-left: 0.5em;
+}
+
+/*Opsommingen in filter*/
+form ul li {
+    list-style: circle;
+    color: white;
+    padding: 0.5em;
+    margin-left: 2rem;
+    list-style-type: none;
+}
+
+/*Hidden titels filter*/
+.genre_noshow, .filteren_noshow, .duration_noshow {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*Positie elementen filter*/
+form div {
+    position: relative;
+}
+
+/*Dropdown filter*/
+.drop {
+    display: block;
+    position: absolute;
+    top: 1.5em;
+    background-color: #EBB91C;
+    padding: 0.5em;
+    z-index: 1;
+    min-width: 10rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*Dropdown hover*/
+.drop li:hover {
+    background-color: #f1f1f1
+}
+
+/*Opmaak list filter*/
+.filteren_noshow li {
+    list-style: none;
+    margin-left: 0.5em;
+}
+
+/*Main content*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Artikelen*/
+article {
+    width: 25em;
+    min-height: 10em;
+    margin: 1em;
+    background-color: white;
+    padding: 1em;
+}
+
+/*Metadata styling*/
+article a {
+    color: #060922;
+    text-decoration: none;
+}
+
+article footer {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article p a {
+    color: #0077D6;
+}
+
+/*Titel verhaal*/
+h2 {
+    margin: 0.2em 0 0.5em 0;
+    color: #003082;
+}
+
+/*Afbeelding blind*/
+.blind_cover {
+    width: 25em;
+    height:5em;
+    background-image: url("blind_cover.png");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: top;
+    background-color: #003082;
+    position: relative;
+    top: -1em;
+    left: -1em;
+}
+
+/*Afbeelding paranoia*/
+.paranoia_cover {
+    width: 25em;
+    height:5em;
+    background-image: url("paranoia_cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-color: #a59b94;
+    position: relative;
+    top: -1em;
+    left: -1em;
+}
+
+/*Afbeelding kinderboek*/
+.kinderboek {
+    background-image: url("kinderboek_cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 20em;
+    width: 52em;
+    display: flex;
+}
+
+/*Kinderboek cover meta data*/
+.kinderboek_cover {
+    align-self: flex-end;
+}
+
+/*Meta data*/
+address {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+/*Button naar kinderboek*/
+a[href="kinderboek.html"] {
+    text-decoration: none;
+    background-color: #0077D6;
+    color: white;
+    padding: 0.5em 0.7em;
+    box-shadow: 0px 0.1em 0px 0px rgba(0,0,0,0.2);
+    transition: all .5s;
+}
+
+/*Hover button kinderboek*/
+a[href="kinderboek.html"]:hover {
+    background-color: #003082;
+}
+
+/*Beweging iconen*/
+.zoom {
+    transition:all .2s;
+}
+
+/*Beweging na hover iconen*/
+.zoom:hover {
+    transform: scale(1.1,1.1);
+}
+
+/*Handje iconen*/
+article footer a {
+  cursor: pointer;
+}
+
+/*Arrow*/
+article p a img {
+    width: 0.85em;
+    height: auto;
+    margin: 0 1em 0 0.5em;
+}
+
+/*Style iconen kinderboek*/
+.kinderboek footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Lees kinderboek verder arrow*/
+a[href="kinderboek.html"] img {
+    width: 15px;
+    height: auto;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+/*Like-Comment*/
+article footer img {
+    width: 1rem;
+    height: auto;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+/*Size like-Comment kinderboek*/
+.kinderboek footer img {
+    width: 1.3rem;
+    height: auto;
+}
+
+/*Bookmark*/
+article footer a:nth-of-type(3){
+    margin-left: auto;
+}
+
+/*Verhaal smartphone*/
+.smartphone {
+  height: 100%;
+  width: 100%
+}
+
+/*Verhaal tablet*/
+.tablet {
+  height: 100%;
+  width: 100%
+}
+
+/*Verhaal desktop*/
+.desktop {
+  height: 100%;
+  width: 100%
+}
+
+
+/*TABLET*/
+@media only screen and (min-width: 30em) {
+  .smartphone {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+}
+
+/*Desktop*/
+@media only screen and (min-width: 50em) and (max-width: 65em) {
+    .tablet{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .kinderboek {
+        height: 20em;
+        width: 90%;
+        display: flex;
+    }
+
+    .kinderboek footer{
+        width: 85%;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 40em) {
+    article {
+        width: 90%;
+    }
+    .blind_cover {
+        width: 90%;
+    }
+    .paranoia_cover {
+        width: 90%;
+    }
+    .drop {
+        width: 80%;
+        position: inherit;
+    }
+}
+
+/*Smartphone*/
+@media (max-width: 32em) {
+    .drop {
+        position: relative;
+        top: 0;
+    }
+    form div {
+        width: 100%;
+        text-align: center;
+        padding: 0.5em;
+    }
+    .drop {
+        box-shadow: none;
+        background-color: white;
+        margin-top: 0.5em;
+    }
+
+    form ul li {
+        color: #2e2e2e;
+        padding: 0.3em;
+        margin-left: 0;
+    }
+}
+
+/*Titel form*/
+legend {
+  font-size: 1.5em;
+  color: #003082;
+}
+
+/*Kopjes*/
+label {
+  color: #003082;
+}
+
+/*Form*/
+form {
+    width: 100%;
+    margin-bottom: 1em;
+    background: #ffc917;
+    color: #003082;
+    box-sizing: border-box;
+}
+
+/*Input velden*/
+fieldset {
+  font-size: 1em;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+/*Tekst opmaak*/
+fieldset input:last-child {
+  text-align: center;
+}
+
+/*Space input titel*/
+input{
+  margin-top: 0.4em;
+  margin-bottom: 2em;
+}
+
+/*Email-ww*/
+input[type="password"],
+input[type="text"] {
+  padding: 1.5em;
+  border: none;
+  width: 25em;
+}
+
+/*Button*/
+input[type="submit"] {
+  color: #FFFFFF;
+  background-color: #0077D6;
+  padding: .8em .8em;
+  padding-right: 2em;
+  padding-left: 2em;
+  margin-top: 2em;
+  line-height: 1.5em;
+  font-size: 1em;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  width: 15em;
+}
+
+/*Hover button*/
+input[type="submit"]:hover {
+  background-color: #005CA0;
+  box-shadow: 0 -0.125rem 0 #005CA0 inset;
+}
+
+/*WW vergeten etc.*/
+button {
+    color: #003082;
+    border-bottom: 2px solid rgba(7, 7, 33, 0.1);
+    display: inline-block;
+    padding: 0 0 0.65rem;
+    margin-top: 0.9rem;
+    box-shadow: none;
+    background: transparent;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1em;
+}

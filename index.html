@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font css -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+    <!--Navigatie-->
+    <nav>
+      <a href="index.html"><img alt="ns" src="images/logo.svg"></a>
+      <a href="index.html"><img alt="bookmark" src="images/bookmark.png"></a>
+      <a href="login.html"><img alt="account" src="images/account.svg"></a>
+      <a href="registreren.html">Registreren</a>
+    </nav>
+    </header>
+
+    <!--Filter-->
+    <form>
+           <!--New-->
+           <div>
+                <a class="filteren">Nieuwste<img src="images/arrow_down.svg" alt="arrow down"></a>
+                <ul class="filteren_noshow">
+                    <li>Populairste</li>
+                </ul>
+            </div>
+            <!--Duration-->
+            <div>
+                <a href="#" class="duration">Leestijd<img src="images/arrow_down.svg" alt="arrow down"></a>
+                <ul class="duration_noshow">
+                    <li>0 - 5 min.</li>
+                    <li>5 - 10 min.</li>
+                    <li>10 + min.</li>
+                </ul>  
+            </div>
+            <!--Genres-->
+            <div>
+                <a href="#" class="genre">Sfeerwoord<img src="images/arrow_down.svg" alt="arrow down"></a>
+                <ul class="genre_noshow">
+                    <li>Gedicht</li>
+                    <li>Dialoog</li>
+                    <li>Humor</li>
+                    <li>Politiek</li>
+                    <li>Fantasie</li>
+                    <li>Liefde</li>
+                </ul>
+            </div>
+    </form>
+
+    <!--Artikelen-->
+    <main>
+        <!--Kinderboek-->
+        <article class="kinderboek">
+           <!--Afbeelding-->
+           <div class="kinderboek_cover">
+                <header>
+                    <!--Meta data-->
+                    <address>Geplaatst op <time datetime="2011-05-27">27 mei 2011</time> door <span class="auteur">Molovich</span></address>
+                </header>
+                    <!--Lees verhaal-->
+                    <a href="kinderboek.html" class="zoom">Lees verhaal <img src="images/arrow_right_white.svg" alt="pijl"></a>
+                <!--Footer-->
+                <footer>
+                    <!--Like-->
+                    <a class="zoom">
+                        <img src="images/like_white.svg" alt="like" class="toggle-image" data-alt-src="images/heart_white_fill.svg">50
+                    </a>
+                    <!--Comment-->
+                    <a class="zoom">
+                        <img src="images/comment_white.svg" alt="reageer">10
+                    </a>
+                </footer>
+            </div>
+        </article>
+
+        <!--Paranoia-->
+        <article class="paranoia">
+            <header>
+                <!--Afbeelding-->
+                <div class="paranoia_cover"></div>
+                <!--Meta data-->
+                <address>Geplaatst op <time datetime="2011-04-21">21 apr. 2011</time> door <span class="auteur">Molovich</span></address>
+                <!--Link naar verhaal-->
+                <a href="paranoia.html"><h2>Paranoia</h2></a>
+            </header>
+            <!--Preview verhaal-->
+            <p>Ik sluip de bus uit. Kop in de kraag. Ik maak me klein en duw m’n zoon vooruit. Hij slaapt. Eindelijk. Zijn gejengel trok veel te veel aandacht. De mensen lopen over het stationsplein. Het voelt alsof er een grote, knipperende pijl boven... 
+            <!--Lees verder-->
+            <a href="paranoia.html"><img src="images/arrow_right.svg" alt="arrow right">(lees nog 5 minuten door)</a></p>
+            <!--Footer-->
+            <footer>
+                <!--Like-->
+                <a class="zoom">
+                    <img src="images/heart.svg" alt="heart" class="toggle-image" data-alt-src="images/heart_black.svg">25
+                </a>
+                <!--Comment-->
+                <a class="zoom">
+                    <img src="images/comment.svg" alt="reageer">10
+                </a>
+                <!--Save-->
+                <a class="zoom">
+                    <img src="images/bookmark.svg" alt="opslaan" class="toggle-image" data-alt-src="images/bookmark_fill.svg">
+                </a>
+            </footer>
+        </article>
+        
+        <!--Blind-->
+        <article class="blind">
+            <header>
+                <!--Afbeelding-->
+                <div class="blind_cover"></div>
+                <!--Meta data-->
+                <address>Geplaatst op <time datetime="2011-06-03">03 jun. 2011</time> door <span class="auteur">Molovich</span></address>
+                <!--Link naar vehaal-->
+                <a href="blind.html"><h2>Blind</h2></a>
+            </header>
+            <!--Preview verhaal-->
+            <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk, niet onvriendelijk: ‘Centraal Station, eindhalte’. Het sissende geluid van busdeuren die open gaan. Mensen drom... 
+            <!--Lees verder-->
+            <a href="blind.html"><img src="images/arrow_right.svg" alt="arrow right">(lees nog 2 minuten door)</a></p>
+            <!--Footer-->
+            <footer>
+                <!--Like-->
+                <a class="zoom">
+                    <img src="images/heart.svg" alt="heart" class="toggle-image" data-alt-src="images/heart_black.svg">17
+                </a>
+                <!--Comment-->
+                <a class="zoom">
+                    <img src="images/comment.svg" alt="reageer">5
+                </a>
+                <!--Save-->
+                <a class="zoom">
+                    <img src="images/bookmark.svg" alt="opslaan" class="toggle-image" data-alt-src="images/bookmark_fill.svg">
+                </a>
+            </footer>
+        </article>
+        
+        <!--Doof-->
+        <article>
+            <header>
+                <!--Meta data-->
+                <address>Geplaatst op <time datetime="2011-06-02">02 jun. 2011</time> door <span class="auteur">Molovich</span></address>
+                <!--Link naar verhaal-->
+                <a href="#"><h2>Doof</h2></a>
+            </header>
+            <!--Preview verhaal-->
+            <p>De bus stopt. Mensen stappen uit. Heel voorzichtig kijk ik in de kinderwagen. Mijn zoon slaapt eindelijk. Ik had het kunnen weten, want halverwege de busreis merkte ik dat de mensen zich niet meer aan ons stoorden. Het gejank zou toen wel gestopt zijn. Ik stap uit en wandel... 
+            <!--Lees verder-->
+            <a href="#"><img src="images/arrow_right.svg" alt="arrow right">(lees nog 12 minuten door)</a></p>
+            <!--Footer-->
+            <footer>
+                <!--Like-->
+                <a class="zoom">
+                    <img src="images/heart.svg" alt="heart" class="toggle-image" data-alt-src="images/heart_black.svg">13
+                </a>
+                <!--Comment-->
+                <a class="zoom">
+                    <img src="images/comment.svg" alt="reageer">10
+                </a>
+                <!--Save-->
+                <a class="zoom">
+                    <img src="images/bookmark.svg" alt="opslaan" class="toggle-image" data-alt-src="images/bookmark_fill.svg">
+                </a>
+            </footer>
+        </article>
+        
+        <!--Sportcommentaar-->
+        <article>
+            <header>
+                <!--Meta data-->
+                <address>Geplaatst op <time datetime="2011-04-28">28 apr. 2011</time> door <span class="auteur">Molovich</span></address>
+                <!--Link naar verhaal-->
+                <a href="#"><h2>Sportcommentaar</h2></a>
+            </header>
+            <!--Preview verhaal-->
+            <p>En daar stopt lijn 21 op exact de juiste tijd op precies de juiste plek op het Stationsplein. De deuren gaat open, de spanning is te snijden. En wie komt daar als eerste uit? Ja hoor, het is de felgroene kinderwagen waarin Molovich Jr. ligt te slapen, op de voet gevolgd door zijn vader... 
+            <!--Lees verder-->
+            <a href="#"><img src="images/arrow_right.svg" alt="arrow right">(lees nog 2 minuten door)</a></p>
+            <!--Footer-->
+            <footer>
+                <!--Like-->
+                <a class="zoom">
+                    <img src="images/heart.svg" alt="heart" class="toggle-image" data-alt-src="images/heart_black.svg">0
+                </a>
+                <!--Comment-->
+                <a class="zoom">
+                    <img src="images/comment.svg" alt="reageer">2
+                </a>
+                <!--Save-->
+                <a class="zoom">
+                    <img src="images/bookmark.svg" alt="opslaan" class="toggle-image" data-alt-src="images/bookmark_fill.svg">
+                </a>
+            </footer>
+        </article>
+        
+        <!--Zoon-->
+        <article>
+            <header>
+                <!--Meta data-->
+                <address>Geplaatst op <time datetime="2011-06-24">24 jun. 2011</time> door <span class="auteur">Molovich</span></address>
+                <!--Link naar verhaal-->
+                <a href="#"><h2>Zoon</h2></a>
+            </header>
+            <!--Preview verhaal-->
+            <p>Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.*Zzzzzzz.**Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? Hjmwhumwhum. Boe?Boe? Hjmwhumwhum. Whèèèh!!! Die!*** Zjjoemmm. Vroem. Tuut... 
+            <!--Lees verder-->
+            <a href="#"><img src="images/arrow_right.svg" alt="arrow right">(lees nog 5 minuten door)</a></p>
+            <!--Footer-->
+            <footer>
+                <!--Like-->
+                <a class="zoom">
+                    <img src="images/heart.svg" alt="heart" class="toggle-image" data-alt-src="images/heart_black.svg">44
+                </a>
+                <!--Comment-->
+                <a class="zoom">
+                    <img src="images/comment.svg" alt="reageer">2
+                </a>
+                <!--Save-->
+                <a class="zoom">
+                    <img src="images/bookmark.svg" alt="opslaan" class="toggle-image" data-alt-src="images/bookmark_fill.svg">
+                </a>
+            </footer>
+        </article>
+        
+        <!--Zombie-->
+        <article>
+            <header>
+                <!--Meta data-->
+                <address>Geplaatst op <time datetime="2011-06-21">21 jun. 2011</time> door <span class="auteur">Molovich</span></address>
+                <!--Link naar verhaal-->
+                <a href="#"><h2>Zombie</h2></a>
+            </header>
+            <!--Preview verhaal-->
+            <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op zoek naar voedsel, naar half vergane hondenlijken, naar vers mensenvlees. Het is gekkenwerk dat ik hier ben, maar de brandstof van de bus is op. Ik hoopte dwars door de menigte wandelende lijken heen... <a href="#">
+            <!--Lees verder-->
+            <img src="images/arrow_right.svg" alt="arrow right">(lees nog 7 minuten door)</a></p>
+            <!--Footer-->
+            <footer>
+                <!--Like-->
+                <a class="zoom">
+                    <img src="images/heart.svg" alt="heart" class="toggle-image" data-alt-src="images/heart_black.svg">34
+                </a>
+                <!--Comment-->
+                <a class="zoom">
+                    <img src="images/comment.svg" alt="reageer">13
+                </a>
+                <!--Save-->
+                <a class="zoom">
+                    <img src="images/bookmark.svg" alt="opslaan" class="toggle-image" data-alt-src="images/bookmark_fill.svg">
+                </a>
+        
+            </footer>
+        </article>
+    </main>
+    <script src="script/dropdown.js"></script>
+    <script src="script/image.js"></script>
+</body>
+</html>
