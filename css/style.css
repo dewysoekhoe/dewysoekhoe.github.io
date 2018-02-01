@@ -439,6 +439,13 @@ fieldset input:last-child {
   text-align: center;
 }
 
+fieldset ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding:0;
+}
+
 /*Space input titel*/
 input{
   margin-top: 0.4em;
@@ -447,7 +454,9 @@ input{
 
 /*Email-ww*/
 input[type="password"],
-input[type="text"] {
+input[type="text"],
+input[type="email"], 
+input[type="tel"] {
   padding: 1.5em;
   border: none;
   width: 25em;
@@ -473,6 +482,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #005CA0;
   box-shadow: 0 -0.125rem 0 #005CA0 inset;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+input:invalid {
+  border: 1px solid red;
 }
 
 /*WW vergeten etc.*/

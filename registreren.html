@@ -25,25 +25,25 @@
         <fieldset>
           <legend>Inloggegevens</legend>
             <label for="firstname">Voornaam</label>
-              <input type="text" name="name" placeholder="Dewy" required>
-            <label for="firstname">Achternaam</label>
-              <input type="text" name="name" placeholder="Soekhoe" required>
+              <input id= "firstname" type="text" name="name" placeholder="Dewy" required>
+            <label for="lastname">Achternaam</label>
+              <input id="lastname" type="text" type="text" name="name" placeholder="Soekhoe" required>
               <ul>
             <label for="male">Man</label>
-              <input type="radio" name="gender" value="male">
+              <input id="male" type="radio" name="gender" value="male">
             <label for="female">Vrouw</label>
-              <input type="radio" name="gender" value="female">
+              <input id="female" type="radio" name="gender" value="female">
             <label for="other">Anders</label>
-              <input type="radio" name="gender" value="other">
+              <input id="other" type="radio" name="gender" value="other">
               </ul>
             <label for="tel">Telefoonnummer</label>
-              <input type="text" name="usrtel" placeholder="06-12345678" required>
-            <label for="lastname">Gebruikersnaam</label>
-              <input type="text" name="name" placeholder="dewy_loves_frontend" required>
+              <input id="tel" type="tel" name="tel" placeholder="06-12345678" required>
+            <label for="username">Gebruikersnaam</label>
+              <input id="username" type="text" name="name" placeholder="dewy_loves_frontend" required>
             <label for="email">Emailadres</label>
-              <input type="text" i name="email" placeholder="dl.soekhoe@gmail.com" required>
+              <input id="email" type="email" name="email" placeholder="dl.soekhoe@gmail.com" required>
             <label for="password">Wachtwoord</label>
-              <input type="password" name="password" placeholder="********" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+              <input id="password" type="password" name="password" placeholder="********" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
               <input type="submit" value="Aanmaken">
         </fieldset>
        </form>
